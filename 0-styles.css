@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+body ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+body ul li {
+    padding: 1rem;
+    height: calc(375px + 1rem);
+    width: 220px;
+    font-size: 32px;
+    font-weight: 700;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+}
+
+body ul li:not(:first-child) {
+    margin-left: 2rem;
+}
+
+body ul li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 220px;
+  width: 200px;
+  height: 285px;
+  height: 350px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #f7f7f7;
+  list-style: none;
+  padding: 1rem;
+}
+
+body ul li span {
+  position: absolute;
+  bottom: 50px; /* center the sprites */
+  left: 0;
+  right: 0;
+  height: 225px;
+  background-image: url(img/0-sprite.png);
+  background-repeat: no-repeat;
+  background-size: 516px 225px;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden; /* make the picture follow parent form to follow the border radius */
+}
+
+/* center the sprites */
+body ul li .i-html {
+  background-position: 15px 0;
+}
+
+body ul li .i-css {
+  background-position: -160px 0;
+}
+
+body ul li .i-js {
+  background-position: -335px 0;
+}
