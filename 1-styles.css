@@ -1,0 +1,22 @@
+h2 a {
+    position: relative;
+    text-decoration: none;
+    color: #941d37;
+}
+
+h2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #941d37;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+h2 a:hover::after {
+  transform: scaleX(1);
+}
